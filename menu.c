@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 //make a menu for what porn you wanna watch
-const char *shid ="https://e621.net/posts?tags=order%%3Arandom+%s";
+const char *shid ="start https://e621.net/posts?tags=order%%3Arandom+%s";
 int main(void) {
     puts("You Degenerate");
     puts("\t1.Smothering");
@@ -58,6 +59,10 @@ int main(void) {
         smegma = "meme";
         break;
     }
-    printf(shid,smegma);
+    char cock[128];
+    snprintf(cock,128u,shid,smegma);
+    system(cock);
+    //kill me
+    
     return 0;
 }
